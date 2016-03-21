@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<head>
+	<title>Widget Instagram PRACTICA 1</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/widget.js"></script>
+	
+	<!--[if IE]> 
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<h1>Gestión Widget</h1>
+			<p>A continuación se listan las publicaciones de los usuarios con los criterios asignados desde el filtro de búsqueda</p>
+			<h2>Listado</h2>
+			<ul id="widget">
+				<li>
+					<img src="img/11355999_956713737739169_275804961_n.jpg" />		
+					<div class="post_date">2016-02-21</div>
+					<div class="author">instaanimal</div>
+					<div class="descr">Cool, bear swimming!</div>
+					
+				</li>
+				
+				<li>
+					<img src="img/12717116_1246153612080833_988550396_n.jpg" />
+					<div class="post_date">2016-02-16</div>
+					<div class="author">animaldisplay</div>
+					<div class="descr">So majestic!</div>
+				</li>
+				
+				<li>
+					<img src="img/12797598_1705532343048073_475838813_n.jpg" />
+					<div class="post_date">2016-02-27</div>
+					<div class="author">instaanimal</div>
+					<div class="descr">Dolphins, awesome!</div>
+				</li>
+			</ul>			
+
+		</div>
+		<div id="actions">
+			<h3>Filtro de búsqueda</h3>
+			<div id="porcodigo">
+				<label for="usuari">Usuario</label>
+				<input type="text" id="usuari" name="usuari" placeholder="introdueix codi" class="large">
+				<button id="cerca_usuari" onclick="searchUser()">Buscar</button><br />
+				<div id="selected_users">
+					<h6>Usuarios seleccionados:</h6>
+					<ul></ul>
+				</div>
+				<h6>Búsquedas</h6>
+				<button id="cerca_tag">Búsqueda por tag</button><br />
+								
+			</div>
+			<div>
+				<p>Inserta aquí otras acciones necesarias ...</p>
+			</div>
+		</div>
+		<br class="clear" />
+	</div>
+</body>
+</html>
